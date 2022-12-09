@@ -1,0 +1,18 @@
+.AUEB-logo{
+    width: 600px;
+    height: auto;
+}
+.AUEB-title{
+    font-family:'Roboto Slab',serif;
+    text-align: center;
+    font-weight: 600;
+    color:#762124;
+    text-shadow: 2px 2px 2px black ;
+
+
+}
+.AUEB-text{
+    font-family:'Quicksand', serif ;
+    color: grey;
+
+}

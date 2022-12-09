@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: blue; */
+}
+
+.container {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aqua; */
+}
+
+.header {
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #762124;
+}
+
+.logo > img {
+    height: 120px;
+    width: auto;
+    /* vertical-align: middle; */
+}
+
+.navbar {
+    width: 600px;
+}
+
+/* .nav {
+    float: left;
+    width: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+} */
+
+.navbar .nav  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    list-style: none;
+}
+
+/* .nav > li:last-of-type {
+    margin-right: 55px;;
+} */
+
+.navbar .nav > li > a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar .nav a:active {
+    background-color: cornflowerblue;
+}
+
+.navbar .nav > li:not(:first-child)  a:hover,
+.navbar .nav > li:not(:first-child)  a:focus{ 
+ 
+    background-color: rgb(26, 165, 26);
+    color: #762124;
+    transition: all 0.50s ease-in;
+}
+
+.navbar .dropdown {
+    position: relative;
+    /* display: inline-block; */
+    /* width: 100%; */
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    padding-top: 40px;
+    background-color: rgb(29, 92, 92);
+    width: 120px;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.navbar .dropdown-content > li {
+    width: 100%;
+    border-bottom: 1px solid white ;
+}
+
+.navbar .dropdown-content >li:last-of-type{
+    border-bottom: none;
+}
+
+.navbar .dropdown-content a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: rgb(26, 165, 26);
+}
+
+.navbar .dropdown > a {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .dropdown:hover > .dropdown-content{
+    display: flex;
+}
+
+.nav-toggle {
+    display: none;
+    margin-right: 30px;
+}
+
+.nav-toggle > button {
+    width: 50px;
+    height: 50px;
+}
+
+.home-img {
+    height: calc(99vh - 120px);
+    background-image: url(../../../images/tep-aueb2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.home-title{
+    width: 50%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px; 
+}
+
+.gap-bottom{
+    margin-bottom: 25px;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    height: 150px;
+    background-color: #762124;
+    justify-content: space-between;
+    align-items: center; 
+    color: wheat;
+    padding: 0 10px;   
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+
+.social  > span {
+    margin-right: 10px;
+}
+
+.social-text {
+    color: blue;
+    font-size: 1.8rem;
+    font-weight: 600;    
+    margin-right: 8px;
+}
+
+/* Navbar Toggle */
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle .nav,
+.navbar-toggle .dropdown-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-toggle li{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid black;
+}
+
+.navbar-toggle a {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-toggle .dropdown-content a {
+    font-size: 1rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 1201px){
+    .home-title > span {
+        font-size: 3rem;
+    }
+
+    .logo > img {
+        width: auto;
+        height: 150px;
+    }
+}
+
+@media (max-width: 1200px){
+    .navbar{
+        display: none;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+}
+
+@media (max-width: 1150px){
+    .home-title > span {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 992px){
+    .home-title > span {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px){
+    .home-title > span {
+        font-size: 1.3rem;
+    }
+
+    .logo > img {
+        width: auto;
+        height: 100px;
+    }
+
+    .nav-toggle > button {
+        width: 40px;
+        height: 40px;
+    }
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}

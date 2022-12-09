@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΦΟΡΜΑ ΠΛΗΡΩΜΗΣ</title>
+</head>
+<body>
+
+<h1><strong> Φόρμα πληρωμής </strong></h1>
+<p>Τα Υποχρεωτικά πεδία ακολουθούνται από <abbr title="Required field">*</abbr>.</p>
+
+<h2><strong>Προσωπικά Στοιχεία</strong></h2>
+<form>
+    <fieldset style="width: 300px;" >
+        <legend>Title</legend>
+        <div>
+            <div>
+            <input type="radio" name="gender" id="Mr" value="Mr" checked>
+            <label for="Mr">Mr.</label>
+            </div>
+
+            <div>
+            <input type="radio" name="gender" id="Mrs" value="Mrs">
+            <label for="Mrs">Mrs.</label>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" id="Dr" value="Dr">
+                <label for="Dr">Dr.</label>
+                </div>
+        </div>
+    </fieldset>
+
+    <table>
+        <tr><td><label for="name">Name:<abbr title="Required field">*</abbr></label><input type="text" id="name"></td></tr>
+        <tr><td><label for="email">E-mail:<abbr title="Required field">*</abbr></label><input type="email" id="email"></td></tr>
+        <tr><td><label for="Password">Password:<abbr title="Required field">*</abbr></label><input type="text" id="Password"></td></tr>
+    </table>
+
+    <h2><strong>Πληροφορίες Πληρωμής</strong></h2>
+
+    <table>
+        <tr><td><label for="card">Card Type</label>
+            <select name="card" id="card">
+                <option value="1">Visa</option>
+                <option value="2">Mastercard</option>
+            </select></td></tr>
+            <tr><td><label for="cardno">Card Number:<abbr title="Required field">*</abbr></label><input type="number" id="cardno"></td></tr>
+            <tr><td><label for="expdate">Expiration Date:<abbr title="Required field">*</abbr></label><input type="date" id="expdate"></td></tr>
+    </table>
+
+    <div>
+        <input type="Submit" Value="Προχωρήστε στην πληρωμή">
+    </div>
+
+</form>
+
+    
+</body>
+</html>
